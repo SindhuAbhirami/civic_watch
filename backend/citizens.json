@@ -1,0 +1,50 @@
+[
+  {
+    "fullname": "Abhi",
+    "age": "20",
+    "phone": "8400864908",
+    "address": "rajahmundry",
+    "password": "$2b$10$G0ZooG2shxvgnzuM5GZo1ODD4E3yh2nPN5xfvKm/7nRHBOAf81UPS",
+    "department": "",
+    "role": "user",
+    "id": 1753273728830,
+    "username": "8400864908",
+    "photo": null
+  },
+  {
+    "fullname": "mike",
+    "age": "20",
+    "phone": "1234567890",
+    "address": "sasi",
+    "password": "$2b$10$pvYcIFPHyTxgMbOfDgFaqehzqe0dgP.YqU7JGVlcnR2MAnp710nA.",
+    "department": "",
+    "role": "user",
+    "id": 1753283954049,
+    "username": "1234567890",
+    "photo": null
+  },
+  {
+    "fullname": "abhirami",
+    "age": "22",
+    "phone": "1234567899",
+    "address": "rajahmundry",
+    "password": "$2b$10$9CLbwecWe6YgB54g6QUYW.DXivbtWcESKKRdov0Hhc4rimrr/G1Ae",
+    "department": "",
+    "role": "user",
+    "id": 1758704347317,
+    "username": "1234567899",
+    "photo": null
+  },
+  {
+    "fullname": "shino",
+    "age": "22",
+    "phone": "1234567889",
+    "address": "demon",
+    "password": "$2b$10$lbSs86rgPVrMTzJla0Fl9uqWLHOSYBv3ZWcUfMOFBi2qkoSDGZige",
+    "department": "",
+    "role": "user",
+    "id": 1759919470528,
+    "username": "1234567889",
+    "photo": "C:\\Users\\lenovo\\OneDrive\\Documents\\project\\civcwatch\\backend\\uploads\\1759919470199-1053279.png"
+  }
+]

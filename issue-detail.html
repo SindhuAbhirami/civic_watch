@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFk5TuwGv4H64uuYAu4pmeOOJogazOehA" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Link back to the home page -->
+            <h1><a href="index.html" class="logo-link">CivicWatch</a></h1>
+        </div>
+        <nav class="header-nav">
+            <!-- A button to go back -->
+            <a href="index.html" class="btn btn-secondary">Back to Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="detail-page-main">
+        <div class="detail-container">
+            <!-- Left side (1/4 width) -->
+            <div class="detail-left">
+                <img src="" alt="Issue Image" id="detail-image" class="detail-image">
+                <div class="detail-content">
+                    <h2 id="detail-name">Loading Issue...</h2>
+                    <p id="detail-area" class="issue-area">Loading location...</p>
+                    <h3>Description</h3>
+                    <p id="detail-description" class="issue-description">Loading details...</p>
+                </div>
+            </div>
+
+            <!-- Right side (3/4 width) -->
+            <div class="detail-right">
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <!--
+        The order of these scripts is important!
+        1. Our detail.js logic
+        2. The Google Maps API, which will then call a function inside our script
+    -->
+    <script src="detail.js"></script>
+    <!-- THIS IS THE CORRECTED LINE: YOUR_API_KEY has been replaced -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFk5TuwGv4H64uuYAu4pmeOOJogazOehA&callback=initMap"></script>
+
+</body>
+</html>

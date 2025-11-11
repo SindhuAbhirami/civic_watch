@@ -1,0 +1,38 @@
+[
+  {
+    "fullname": "John",
+    "age": "20",
+    "phone": "8400864901",
+    "address": "rajahmundry",
+    "password": "$2b$10$Jdw3ATZ395QPvIys/Qlazebh9O1Kb9imJ3pSlIQEFOq2zHU7/8g3m",
+    "department": "public-works",
+    "role": "official",
+    "id": 1753274008587,
+    "username": "8400864901",
+    "photo": null
+  },
+  {
+    "fullname": "abhi",
+    "age": "22",
+    "phone": "1123456789",
+    "address": "rjy",
+    "password": "$2b$10$vxCexceM/IbCitPi7HsRUebzkaVuyirwnlGlgBf4cSGwoFHbCEFRW",
+    "department": "public-works",
+    "role": "official",
+    "id": 1758704459173,
+    "username": "1123456789",
+    "photo": null
+  },
+  {
+    "fullname": "arya",
+    "age": "22",
+    "phone": "1223456789",
+    "address": "rjy",
+    "password": "$2b$10$mxZimTV60RtfPbhDzL8/HOSTVAn5VTslCWbn7s/9tBuEJVaYSu52.",
+    "department": "sanitation",
+    "role": "official",
+    "id": 1759917325265,
+    "username": "1223456789",
+    "photo": null
+  }
+]

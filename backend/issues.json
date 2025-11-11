@@ -1,0 +1,36 @@
+[
+  {
+    "issue-type": "pothole",
+    "issue-description": "Detected: pothole (100.00%)",
+    "lat": "16.8199218",
+    "lng": "81.5315184",
+    "reporterId": "1758704347317",
+    "reporterName": "abhirami",
+    "id": 1759918416686,
+    "name": "pothole",
+    "description": "Detected: pothole (100.00%)",
+    "area": "rajahmundry",
+    "status": "Reported, Pending Confirmation",
+    "statusColor": "status-red",
+    "photo": "uploads/1759918416655-10.jpg",
+    "timestamp": "2025-10-08T10:13:36.687Z",
+    "handlerId": null
+  },
+  {
+    "issue-type": "pothole",
+    "issue-description": "Detected: fire (89.61%)",
+    "lat": "16.8214332",
+    "lng": "81.5376905",
+    "reporterId": "1759919470528",
+    "reporterName": "shino",
+    "id": 1759919507066,
+    "name": "pothole",
+    "description": "Detected: fire (89.61%)",
+    "area": "demon",
+    "status": "Reported, Pending Confirmation",
+    "statusColor": "status-red",
+    "photo": "uploads/1759919507055-pothole-with-fire-it-that-is-ground_681987-30371.jpg",
+    "timestamp": "2025-10-08T10:31:47.066Z",
+    "handlerId": null
+  }
+]

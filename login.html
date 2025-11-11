@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Register - CivicWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><h1><a href="index.html" class="logo-link">CivicWatch</a></h1></div>
+        <nav class="header-nav"><a href="index.html" class="btn btn-secondary">Back to Dashboard</a></nav>
+    </header>
+    <main class="report-page-main">
+        <div id="login-container" class="form-container">
+            <h2 id="login-title">User Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username (Phone Number):</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit" class="btn btn-primary full-width-btn">Submit</button>
+                <p class="form-toggle-link">Not registered? <a href="#" id="show-register-link">Register Here</a></p>
+            </form>
+        </div>
+        <div id="register-container" class="form-container hidden">
+            <h2 id="register-title">User Registration</h2>
+            <form id="register-form">
+                <label for="reg-fullname">Full Name:</label>
+                <input type="text" id="reg-fullname" name="fullname" required>
+                <label for="reg-age">Age:</label>
+                <input type="number" id="reg-age" name="age" required>
+                <label for="reg-phone">Phone Number:</label>
+                <input type="tel" id="reg-phone" name="phone" required>
+                <label for="reg-address">Address:</label>
+                <textarea id="reg-address" name="address" rows="3" required></textarea>
+                
+                <!-- NEW PASSWORD FIELDS -->
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="password" minlength="6" required>
+                <label for="reg-confirm-password">Confirm Password:</label>
+                <input type="password" id="reg-confirm-password" minlength="6" required>
+
+                <label for="reg-photo">Upload Photo (Optional):</label>
+                <input type="file" id="reg-photo" name="photo" accept="image/*">
+                
+                <div id="department-field" class="hidden">
+                    <label for="reg-department">Department:</label>
+                    <select id="reg-department" name="department">
+                        <option value="">-- Choose a department --</option>
+                        <option value="public-works">Public Works</option>
+                        <option value="sanitation">Sanitation</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary full-width-btn">Register</button>
+                <p class="form-toggle-link">Already registered? <a href="#" id="show-login-link">Login Here</a></p>
+            </form>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

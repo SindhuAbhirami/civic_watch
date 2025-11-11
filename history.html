@@ -1,0 +1,31 @@
+<!-- START OF FILE: history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Report History - CivicWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFk5TuwGv4H64uuYAu4pmeOOJogazOehA" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1><a href="index.html" class="logo-link">CivicWatch - My History</a></h1>
+        </div>
+        <!-- The header will be dynamically filled by auth.js -->
+        <nav id="header-nav-auth" class="header-nav"></nav>
+    </header>
+    <main>
+        <div class="issue-container">
+            <p>Loading your reported issues...</p>
+        </div>
+    </main>
+    <script src="auth.js"></script>    <!-- This script powers the header -->
+    <script src="history.js"></script> <!-- This script powers the page content -->
+</body>
+</html>

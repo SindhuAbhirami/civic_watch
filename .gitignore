@@ -1,0 +1,44 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+*.env
+
+# Model and dataset files
+*.h5
+*.pkl
+*.sav
+*.joblib
+dataset/
+datasetv1/
+saved_models_v2/
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+# Node / JS build (if any frontend uses npm)
+node_modules/
+
+# Misc
+*.db
+*.sqlite3

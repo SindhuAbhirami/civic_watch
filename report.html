@@ -1,0 +1,99 @@
+<!-- START OF FILE: report.html (REVISED) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Issue - CivicWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFk5TuwGv4H64uuYAu4pmeOOJogazOehA" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1><a href="index.html" class="logo-link">CivicWatch</a></h1>
+        </div>
+        <nav id="header-nav-auth" class="header-nav"></nav>
+    </header>
+
+    <main class="report-page-main">
+        <div class="form-container">
+            <h2>Report a New Civic Issue</h2>
+            <form id="report-form">
+                <label for="issue-type">Type of Issue:</label>
+                <select id="issue-type" name="issue-type" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="pothole">Pothole</option>
+                    <option value="streetlight">Broken Streetlight</option>
+                    <option value="graffiti">Graffiti</option>
+                    <option value="other">Other (Please specify)</option>
+                </select>
+                <div id="other-issue-container" class="hidden">
+                    <label for="other-issue-text">Please specify the issue:</label>
+                    <input type="text" id="other-issue-text" name="other-issue-text">
+                </div>
+                <label for="issue-photo">Photo of Issue:</label>
+                <div class="photo-input-container">
+                    <input type="file" id="issue-photo" name="issue-photo" accept="image/*">
+                    <button type="button" id="take-photo-btn" class="btn btn-secondary">Use Camera</button>
+                </div>
+                <!-- NEW: Photo Preview Area -->
+                <div class="photo-preview-container">
+                    <img id="photo-preview-img" src="" alt="Photo Preview" class="hidden">
+                </div>
+                <label for="issue-description">Description:</label>
+
+<div class="description-container" style="position: relative;">
+    <textarea id="issue-description" name="issue-description" rows="5" required></textarea>
+    <div id="ai-spinner" class="hidden" style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #ccc;
+        border-top: 3px solid #43a047;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    "></div>
+</div>
+
+<style>
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>
+                <label>Location:</label>
+                <button type="button" id="get-location-btn" class="btn btn-secondary">Get My Current Location</button>
+                <div id="location-display">Location not yet captured.</div>
+                
+                <input type="hidden" id="lat" name="lat">
+                <input type="hidden" id="lng" name="lng">
+
+                <button type="submit" class="btn btn-primary full-width-btn">Submit Report</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Camera Modal (with updated controls) -->
+    <div id="camera-modal" class="modal hidden">
+        <div class="modal-content">
+            <video id="camera-stream" autoplay></video>
+            <canvas id="camera-canvas" class="hidden"></canvas> <!-- Will show the preview -->
+            <div class="modal-controls">
+                 <button id="snap-photo-btn" class="btn btn-primary">Snap Photo</button>
+                 <button id="retake-photo-btn" class="btn btn-secondary hidden">Retake</button>
+                 <button id="confirm-photo-btn" class="btn btn-primary hidden">Confirm & Use</button>
+                 <button id="close-camera-btn" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="report.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+--- START OF FILE profile.html ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile - CivicWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><h1><a href="index.html" class="logo-link">CivicWatch</a></h1></div>
+        <nav id="header-nav-auth" class="header-nav"></nav>
+    </header>
+    <main class="report-page-main">
+        <div id="profile-container" class="form-container">
+            <h2>My Profile</h2>
+            <form id="profile-form">
+                <label for="profile-fullname">Full Name:</label>
+                <input type="text" id="profile-fullname" name="fullname" required>
+
+                <label for="profile-username">Phone Number (Username):</label>
+                <input type="text" id="profile-username" name="username" disabled> <!-- Username typically not editable -->
+
+                <label for="profile-age">Age:</label>
+                <input type="number" id="profile-age" name="age" required>
+
+                <div id="profile-address-container">
+                    <label for="profile-address">Address:</label>
+                    <textarea id="profile-address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div id="profile-department-container" class="hidden">
+                    <label for="profile-department">Department:</label>
+                    <select id="profile-department" name="department">
+                        <option value="">-- Choose a department --</option>
+                        <option value="public-works">Public Works</option>
+                        <option value="sanitation">Sanitation</option>
+                        <option value="traffic">Traffic Management</option>
+                        <option value="parks">Parks & Recreation</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary full-width-btn">Update Profile</button>
+            </form>
+
+            <h2 style="margin-top: 2rem;">Change Password</h2>
+            <form id="password-form">
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password" name="currentPassword" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="newPassword" minlength="6" required>
+
+                <label for="confirm-new-password">Confirm New Password:</label>
+                <input type="password" id="confirm-new-password" name="confirmNewPassword" minlength="6" required>
+                
+                <button type="submit" class="btn btn-secondary full-width-btn">Change Password</button>
+            </form>
+        </div>
+    </main>
+    <script src="auth.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
