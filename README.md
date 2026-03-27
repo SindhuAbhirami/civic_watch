@@ -58,7 +58,8 @@ AI/ML:
 4. The model predicts the category
 5. Result is shown on the screen
 
-
+## Sample output
+<img width="737" height="922" alt="image" src="https://github.com/user-attachments/assets/e1be6529-445d-4e8d-8c44-9756def7d65a" />
 
 ## Conclusion
 
